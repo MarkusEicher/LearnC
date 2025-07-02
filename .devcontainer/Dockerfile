@@ -2,6 +2,9 @@ FROM mcr.microsoft.com/devcontainers/cpp:1-debian-11
 
 ARG REINSTALL_CMAKE_VERSION_FROM_SOURCE="none"
 
+# Setze globale Compiler-Flags für C-Programme
+ENV CFLAGS="-std=c99 -Wall -Wextra -Wshadow -Werror"
+
 # Optionally install the cmake for vcpkg
 COPY ./reinstall-cmake.sh /tmp/
 

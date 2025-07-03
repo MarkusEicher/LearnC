@@ -6,7 +6,7 @@ void main () {
     int age = 0;
     float gpa = 0.00f;
     char grade = '\0';
-    char name[30];
+    char name[30] = "";
 
     printf("Please enter your age: ");
     scanf("%d", &age);
@@ -19,7 +19,8 @@ void main () {
     getchar();
     // scanf("%s", &name);
     fgets(name, sizeof(name), stdin);
-    name[strcspn(name, "\n")] = 0;  // entfernt das newline, wenn vorhanden
+    // name[strcspn(name, "\n")] = 0;  // entfernt das newline, wenn vorhanden
+    name[strlen(name) - 1] = '\0';
 
 
     printf("Your name is %s, you are %d years old.\n", name, age);

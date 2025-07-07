@@ -1,7 +1,8 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+// #include <string.h>
+// #include <stdlib.h>
 #include <unistd.h>
+#include <sys/wait.h>
 
 int main (int argc, char* argv[]) {
     int id = fork();
@@ -15,13 +16,20 @@ int main (int argc, char* argv[]) {
         n = 6;
     }
 
+    if (id != 0) {
+        // int status;
+        wait(NULL);
+    }
+
     int i;
     for (i = n; i < n + 5; i++) {
         printf("%d ", i);
         fflush(stdout);
         // sleep(1);
     }
-    printf("\n");
+    if (id != 0) { 
+        printf("\n");
+    }  
 
     return 0;
 }

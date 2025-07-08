@@ -11,7 +11,7 @@ int main (int argc, char* argv[]) {
     int id2 = fork();
         if (id1 == 0) {
             if (id2 == 0) {
-                printf("We are process y with PID %d\n", getpid());
+                printf("We are process y with PID %d and we were created by %d\n", getpid(), getppid());                
             } else {
                 printf("We are process x with PID %d\n", getpid());
             }

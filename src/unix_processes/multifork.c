@@ -13,13 +13,13 @@ int main (int argc, char* argv[]) {
             if (id2 == 0) {
                 printf("We are process y with PID %d and we were created by %d\n", getpid(), getppid());                
             } else {
-                printf("We are process x with PID %d\n", getpid());
+                printf("We are process x with PID %d and we were created by %d\n", getpid(), getppid());
             }
         } else {
             if (id2 == 0) {
-                printf("We are process z with PID %d\n", getpid());
+                printf("We are process z with PID %d and we were created by %d\n", getpid(), getppid());
             } else {
-                printf("We are the parent process! with PID %d\n", getpid());
+                printf("We are the parent process! with PID %d and we were created by %d\n", getpid(), getppid());
             }
         }
         while(wait(NULL) != -1 || errno != ECHILD) {

@@ -4,6 +4,7 @@
 int main() {
 
     printf("Size of short integer is %zu\n", sizeof(short));
+    printf("Size of integer is %zu\n", sizeof(int));
     printf("Size of long integer is %zu\n", sizeof(long));
     printf("Size of short integer is %zu\n", sizeof(int));
 

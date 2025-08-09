@@ -20,8 +20,6 @@
 		"vscode": {
 			"extensions": [
 				"formulahendry.code-runner",
-				"ms-vscode.cpptools",
-				"ms-vscode.cpptools-themes",
 				"ms-vscode.cpptools-extension-pack"
 			]
 		}

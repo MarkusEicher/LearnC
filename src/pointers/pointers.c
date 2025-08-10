@@ -9,7 +9,7 @@ void main()
     printf("p %d\n", p);
     printf("p %d\n", &a); */
 
-    /* 
+    
     // Explained a bit deeper
     int a = 1025;
     int *p;
@@ -28,10 +28,10 @@ void main()
     // *p0 = 'A';
     // printf("Now the value of a is %d\n", a);
     // printf("Now the address of a (&a) is %d\n", &a);
- */
+
 
  
-    int x = 5;
+    /* int x = 5;
     int* p = &x;
     *p = 6;
     int** q = &p;
@@ -46,7 +46,7 @@ void main()
     ***r = 10;
     printf("x = %d\n", x);
     **q = *p +2;
-    printf("x = %d\n", x);
+    printf("x = %d\n", x); */
 
 
 }

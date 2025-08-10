@@ -8,8 +8,11 @@ int main()
 
     // int (*p) [2] [2] = C;
     
-    printf("%d %d %d\n", C[0], C[1], C[2]);
-    printf("%d\n", C[0] [0]);
+    // printf("%d %d %d\n", C[0], C[1], C[2]);
+    // printf("%d\n", C[0] [0]);
     printf("%d %d %d %d\n", C, *C, C[0], &C[0][0]);
-    // printf("%d %d %d\n", p);
+    printf("%d\n", C[0]);
+    printf("%d\n", C[1]);
+    printf("%d\n", C[2]);
+    printf("%d\n", C[2][0][3]);
 }
